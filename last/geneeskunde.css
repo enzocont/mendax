@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+	padding: 0;
+	border: 0;
+	  background-image: url('bloed.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+animation:onjuist 1s;
+  font-family: 'Bebas Neue', cursive;
+}
+.dropdown{
+    animation:onjuist 1s;
+}
+/* The container <div> - needed to position the dropdown content */
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    overflow:hidden;
+  display: none;
+  background-color: transparent;
+  min-width: 160px;
+  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    background-color: transparent;
+    animation: juist 1s;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 50px 16px;
+  font-size: 175%;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+@keyframes onjuist {
+    0% {opacity: 0;}
+    30% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes juist {
+  from {height: 0px;}
+  to {height: 80%;}
+}
+.dropdown-content a:hover{
+    
+    transition: all 0.2s;
+    border:0.1em solid #666666;
+}
+   
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.Show {display:block;}
+section{
+	width: 100%;
+	height: 700px;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+a.button1{
+    
+	background-color: white;
+	width: 550px;
+	height: 100px;
+	line-height: 100px;
+	border:0.05em solid #666666;
+	border-radius:1px;
+	text-decoration: none;
+	font-weight:300;
+	color:darkred;
+	text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+	font-size: 400%;
+	text-align:center;
+	transition: all 0.3s;
+}
+a.button1:hover{
+color:#660000;
+background-color:transparent;
+}
+
+@media all and (max-width:30em){
+a.button1{
+display:block;
+margin:0.4em auto;
+}
